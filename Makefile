@@ -1,6 +1,6 @@
 # Variáveis
 CC = g++
-CFLAGS = -Wall -Wextra -std=c++11  # Configurações para C++
+CFLAGS = -Wall -std=c++11  # Configurações para C++
 SRC = src/main.cpp
 EXEC = programa
 
