@@ -6,6 +6,7 @@
 
 O projeto presente neste repositório e nomeado pelos seus colaboradores como "Sitema de transferências" tem como seu principal objetivo replicar o funcionamento de um sistema de banco. As funções que serão  implementadas são as seguintes:
 
+
 🔸Logar: responsável por exercer a função do cartão nos caixas, essa função pede o usuário e sua respectiva senha;
 
 🔸Sacar: o usuário pode realizar um saque de determinado valor (é preciso ser um valor disponível tanto em sua conta, quanto no limite do caixa);
@@ -21,6 +22,7 @@ O projeto presente neste repositório e nomeado pelos seus colaboradores como "S
 🔸Ativos: é possível comprar e vender ações e criptomoedas dentro do banco, também podendo existir transferências entre usuários desses tipos de moeda;
 
 ⚠️ Além destas funções que são expostas ao rodar o código, também foi sugerido para implementar ao código a verificação de CPF e a atribuição de idade, nome e o próprio CPF para todos os usuários. 
+
 
 
 ### Pré-requisitos
