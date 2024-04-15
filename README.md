@@ -27,10 +27,9 @@ Para começar a utilizar o repositório, você precisa cumprir todos os requisit
 
 * Ter um compilador c++ instalado.
 * Ter o mingw na versão 11.2.0 e/ou c++ na versão 17 ou superior.
-* Ter o cmake instalado.
 * Ter o git instalado.
 * Estar em um ambiente linux e/ou derivado.
-* Ter o gcov instalado.
+
 
 <p align="right">(<a href="#top">Voltar para o topo</a>)</p>
 
