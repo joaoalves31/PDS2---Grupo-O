@@ -16,6 +16,10 @@ O projeto presente neste repositório e nomeado pelos seus colaboradores como "S
 
 🔸Extrato: é possível visualizar todas as operações realizadas por todos os usuários usando essa função.
 
+🔸Conta Internacional: o usuário tem o poder de converter o patrimonio presente no banco para qualquer tipo de moeda desejada, seja ela dólar, euro, peso ou qualquer outra que a plataforma contenha;
+
+🔸Ativos: é possível comprar e vender ações e criptomoedas dentro do banco, também podendo existir transferências entre usuários desses tipos de moeda;
+
 ⚠️ Além destas funções que são expostas ao rodar o código, também foi sugerido para implementar ao código a verificação de CPF e a atribuição de idade, nome e o próprio CPF para todos os usuários. 
 
 
