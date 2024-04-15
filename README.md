@@ -4,8 +4,7 @@
 
 ## Começando 🚀
 
-O projeto presente neste repositório e nomeado pelos seus colaboradores como "caixa eletrônico do GECA" tem como seu principal objetivo replicar o funcionamento
-de um caixa eletrônico. As funções implementadas são as seguintes:
+O projeto presente neste repositório e nomeado pelos seus colaboradores como "Sitema de transferências" tem como seu principal objetivo replicar o funcionamento de um sistema de banco. As funções que serão  implementadas são as seguintes:
 
 🔸Logar: responsável por exercer a função do cartão nos caixas, essa função pede o usuário e sua respectiva senha;
 
