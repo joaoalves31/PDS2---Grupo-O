@@ -1,17 +1,6 @@
 <div id="top"></div>
 
-# Trabalho Prático
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Tamanho][tamanho-shield]][tamanho-url]
-[![Linguagens][linguagens-shield]][linguagens-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-<br/>
-
+# Trabalho Prático - PDS2
 
 ## Começando 🚀
 
