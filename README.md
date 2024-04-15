@@ -16,10 +16,8 @@ O projeto presente neste repositório e nomeado pelos seus colaboradores como "S
 
 🔸Extrato: é possível visualizar todas as operações realizadas por todos os usuários usando essa função.
 
-⚠️ Além destas funções que são expostas ao rodar o código, também foi implementado no código a verificação de CPF e a atribuição de idade, nome e o próprio CPF
-para todos os usuários. 
+⚠️ Além destas funções que são expostas ao rodar o código, também foi sugerido para implementar ao código a verificação de CPF e a atribuição de idade, nome e o próprio CPF para todos os usuários. 
 
-Com isso, foi possível replicar o funcionamento do caixa utilizando as habilidades adquiridas na disciplina Programação e Desenvolvimento de Software II.
 
 ### Pré-requisitos
 Para começar a utilizar o repositório, você precisa cumprir todos os requisitos abaixo:
