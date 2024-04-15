@@ -1,14 +1,93 @@
-# PDS2---Grupo-O
-Grupo para o trabalho prático de PDS2 - 2024/1
+<div id="top"></div>
 
-## Sistema Bancário
-Implementação de um software bancário, que possibilitará os usuários se cadastrarem, abrirem uma conta, no qual poderão possuir múltiplas carteiras.
-As carteiras terão o propósito de  administrar seu patrimônio, como sua fortuna, ações e criptomoedas. 
+# Trabalho Prático
 
-Na aplicação o usuário poderá:
-* Visualizar seu patrimônio pela interface
-* Fazer depósitos e saques
-* Fazer transferências nacionais
-* Fazer transferênciais internacionais com conversão automática de moeda
-* Comprar e vender ativos, como ações e criptomoedas
-* Visualizar seu histórico de transações
+[![Contributors][contributors-shield]][contributors-url]
+[![Tamanho][tamanho-shield]][tamanho-url]
+[![Linguagens][linguagens-shield]][linguagens-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
+<br/>
+
+
+## Começando 🚀
+
+O projeto presente neste repositório e nomeado pelos seus colaboradores como "caixa eletrônico do GECA" tem como seu principal objetivo replicar o funcionamento
+de um caixa eletrônico. As funções implementadas são as seguintes:
+
+🔸Logar: responsável por exercer a função do cartão nos caixas, essa função pede o usuário e sua respectiva senha;
+
+🔸Sacar: o usuário pode realizar um saque de determinado valor (é preciso ser um valor disponível tanto em sua conta, quanto no limite do caixa);
+
+🔸Depositar: o usuário tem o poder de depositar um valor para sua conta (ilimitado);
+
+🔸Transferir: o caixa suporta inúmeros usuário que podem fazer transferências entre si;
+
+🔸Extrato: é possível visualizar todas as operações realizadas por todos os usuários usando essa função.
+
+⚠️ Além destas funções que são expostas ao rodar o código, também foi implementado no código a verificação de CPF e a atribuição de idade, nome e o próprio CPF
+para todos os usuários. 
+
+Com isso, foi possível replicar o funcionamento do caixa utilizando as habilidades adquiridas na disciplina Programação e Desenvolvimento de Software II.
+
+### Pré-requisitos
+Para começar a utilizar o repositório, você precisa cumprir todos os requisitos abaixo:
+
+* Ter um compilador c++ instalado.
+* Ter o mingw na versão 11.2.0 e/ou c++ na versão 17 ou superior.
+* Ter o cmake instalado.
+* Ter o git instalado.
+* Estar em um ambiente linux e/ou derivado.
+* Ter o gcov instalado.
+
+<p align="right">(<a href="#top">Voltar para o topo</a>)</p>
+
+### Instalação
+
+1. Clone o repositório.
+   ```sh
+   git clone https://github.com/joaoalves31/PDS2---Grupo-O
+   ```
+2. Execute o comando `make run` para gerar e rodar o projeto.
+    ```sh
+    make run
+    ```
+
+<p align="right">(<a href="#top">Voltar para o topo</a>)</p>
+
+## Como utilizar o Trabalho Prático
+
+Para começar a utilizar, após a instalação, basta rodar:
+
+- Para Linux:
+
+```sh
+  ./bin/main
+```
+- Para Windows:
+
+```sh
+  ./bin/main.exe
+```
+
+<p align="right">(<a href="#top">Voltar para o topo</a>)</p>
+
+
+## Contruibuindo
+
+As contribuições são o que tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Quaisquer contribuições que você fizer são **muito apreciadas**.
+
+Se você tiver uma sugestão para melhorar o projeto, por favor, faça um fork do repositório e crie um pull request. Você também pode simplesmente abrir um issue com a tag "melhoria".
+Não se esqueça de dar uma estrela ao projeto! Obrigado novamente!
+
+1. Dê um fork no projeto
+2. Cria sua branch de melhoria (`git checkout -b feature/MelhoriaIncrivel`)
+3. Faça um commit de suas mudanças (`git commit -m 'feat: adicionado uma melhoria incrível'`)
+4. Faça um push para sua branch (`git push origin feature/MelhoriaIncrivel`)
+5. Abra um pull request.
+
+<p align="right">(<a href="#top">Voltar para o topo</a>)</p>
+
