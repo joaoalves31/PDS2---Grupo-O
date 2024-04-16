@@ -125,3 +125,5 @@ Como um cliente do banco, desejo poder visualizar o extrato da minha conta, para
 * Um cliente acessa a opção de visualização de extrato no menu do sistema, seleciona o período desejado e confirma a solicitação. O sistema exibe todas as transações realizadas dentro do período especificado, incluindo depósitos, saques, transferências e compras de criptomoedas ou ações, em ordem cronológica.
 * Se não houver nenhuma transação registrada na conta, exibir uma mensagem indicando que o extrato está vazio.
 
+
+<p align="right">(<a href="#top">Voltar para o topo</a>)</p>
