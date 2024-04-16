@@ -112,7 +112,7 @@ Como um cliente do banco, desejo poder transferir dinheiro para uma conta intern
 * O usuário acessa a opção de transferência internacional, informa os dados da conta de destino, seleciona a moeda estrangeira desejada e confirma a transação. O sistema converte automaticamente o valor para a moeda de destino, e realiza a transferência com sucesso.
 * Se o saldo disponível na conta for insuficiente para a transação solicitada, exibir uma mensagem de erro informando ao usuário.
 
-### Compra de Criptomoedas 
+### Compra de Ações e Criptomoedas
 
 Como um investidor interessado em diversificar meu portfólio, desejo poder comprar e vender ações e criptomoedas diretamente do sistema bancário, para facilitar minhas transações financeiras e gerenciar meus investimentos.
 * Um cliente acessa a opção de compra de ativos no sistema, seleciona o tipo de ativo desejado (ações ou criptomoedas), informa a quantidade desejada e confirma a transação. O sistema verifica se há saldo suficiente na conta do cliente e executa a compra do ativo pelo preço atual de mercado, atualizando o saldo do cliente e registrando a transação no extrato.
