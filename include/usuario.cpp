@@ -2,7 +2,7 @@
 #include <string>
 #include "usuario.hpp"
 
-void Usuario::signIn()
+void Usuario::pegarDados()
 {
     std::string cpf;
     std::cout << "CPF: " << '\n';
@@ -13,16 +13,15 @@ void Usuario::signIn()
     std::getline(std::cin, senha);
 }
 
+void Usuario::criarConta()
+{
+    void pegarDados();
+    this->username = "NOMEDAPESSOA";
+}
+
 void Usuario::logIn()
 {
-    std::string cpf;
-    std::cout << "CPF: " << '\n';
-    std::getline(std::cin, cpf);
-    
-    std::string senha;
-    std::cout << "Senha: " << '\n';
-    std::getline(std::cin, senha);
-
+    void pegarDados();
     this->username = "NOMEDAPESSOA";
 }
 

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "usuario.hpp"
+#include "include/usuario.hpp"
 
 int main()
 {
@@ -19,4 +19,8 @@ int main()
 	}
 
 	Usuario usuarioAtual;
+	if (opcao == 2)
+	{
+		usuarioAtual.criarConta();
+	}
 }
