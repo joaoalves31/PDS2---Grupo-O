@@ -1,6 +1,6 @@
 #include <iostream>
-#include "include/database.hpp"
-#include "include/usuario.hpp"
+#include "../include/database.hpp"
+#include "../include/usuario.hpp"
 
 
 int main()

@@ -1,6 +1,6 @@
 #include "database.hpp"
 #include <iostream>
-#include <sqlite/sqlite3.h>
+#include "sqlite/sqlite3.h"
 
 Database::Database()
 {
