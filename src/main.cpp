@@ -1,5 +1,11 @@
 #include <iostream>
 #include "include/usuario.hpp"
+#include <sqlite/sqlite3.h>
+
+class Database
+{
+
+};
 
 int main()
 {
