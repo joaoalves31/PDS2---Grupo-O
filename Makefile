@@ -1,6 +1,7 @@
 # Variáveis
 CC = g++
-CFLAGS = -Wall -std=c++11 -lpthread -ldl -lm # Configurações para C++
+CFLAGS = -Wall -std=c++11
+SQLCC = gcc -lpthread -ldl -lm # Configurações para C++
 INCLUDE = include
 BUILD = build
 SRC = src/main.cpp
@@ -8,7 +9,7 @@ EXEC = programa
 
 # Alvo padrão para compilar o executável a partir do arquivo fonte
 $(BUILD)/sqlite.o: $(INCLUDE)/sqlite/sqlite3.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(SQLCC) -c $< -o $@
 
 $(BUILD)/usuario.o: $(INCLUDE)/usuario.cpp $(INCLUDE)/usuario.hpp
 	$(CC) $(CFLAGS) -c $< -o $@
