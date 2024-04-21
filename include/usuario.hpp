@@ -4,7 +4,8 @@
 class Usuario
 {
     private:
-        std::string username;
+        std::string nome;
+        int idUsuario;
         void pegarDados();
         
     public:

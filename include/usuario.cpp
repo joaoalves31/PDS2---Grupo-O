@@ -16,13 +16,11 @@ void Usuario::pegarDados()
 void Usuario::criarConta()
 {
     void pegarDados();
-    this->username = "NOMEDAPESSOA";
 }
 
 void Usuario::logIn()
 {
     void pegarDados();
-    this->username = "NOMEDAPESSOA";
 }
 
 void Usuario::logOut()
