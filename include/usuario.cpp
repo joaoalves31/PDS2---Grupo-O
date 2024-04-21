@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include "database.hpp"
 #include "usuario.hpp"
 
 void Usuario::pegarDados()

@@ -1,11 +1,9 @@
 #include <iostream>
-#include "../include/database.hpp"
+#include "../include/sqlite/sqlite3.h"
 #include "../include/usuario.hpp"
-
 
 int main()
 {
-	Database db;
 	int opcao {};
 
 	// Primeiro Menu - Acesso ao Usuário
