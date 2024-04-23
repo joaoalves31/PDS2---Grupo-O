@@ -42,8 +42,8 @@ int main()
         }
     }
 
-    // TO DO - Registro do usuário
-    // TO DO - Registro do usuário
+    //Registro do usuário
+
 if (opcao == 2) // Se o usuário escolheu a opção de criar conta
 {
     clear_screen();
@@ -77,13 +77,45 @@ if (opcao == 2) // Se o usuário escolheu a opção de criar conta
 
         std::cin >> opcao;
 
-        if (opcao == 7)
+        if (opcao == 3) 
+        {
+            clear_screen();
+
+            std::cout << "Essa opção está sendo desenvolvida!" << std::endl;
+            exit(0);
+        }
+
+        else if (opcao == 4)
+        {
+            clear_screen();
+
+            std::cout << "Essa opção está sendo desenvolvida!" << std::endl;
+            exit(0);
+        }
+        else if (opcao == 5)
+        {
+            clear_screen();
+
+            std::cout << "Essa opção está sendo desenvolvida!" << std::endl;
+            exit(0);
+        }
+
+        else if (opcao == 6)
+        {
+            clear_screen();
+
+            std::cout << "Essa opção está sendo desenvolvida!" << std::endl;
+            exit(0);
+        }
+
+        else if (opcao == 7)
         {
             clear_screen();
 
             std::cout << "Tchau <usuario>!!!" << std::endl;
             exit(0);
         }
+
     }
 
     return 0;
