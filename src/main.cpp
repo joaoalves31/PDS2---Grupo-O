@@ -24,7 +24,7 @@ int main()
         clear_screen();
 
         std::cout << "Bem Vindo ao Banquin!" << '\n';
-        std::cout << "Primeiro, registre-se ou entre em nosso sistema." << '\n';
+        std::cout << "Primeiro, registre-se ou entre em nosso sistema." << '\n' << std::endl;
         std::cout << "[1] Entrar na Minha conta" << '\n';
         std::cout << "[2] Criar Conta" << '\n';
         std::cout << "[3] Sair do Sistema" << '\n';
