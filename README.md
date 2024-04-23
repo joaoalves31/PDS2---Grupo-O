@@ -15,22 +15,21 @@ Agradecemos aos integrantes do grupo:
     <img src="https://avatars.githubusercontent.com/u/79288199?v=4"
         width="60"
     />
-</a> -
 <a href="https://github.com/joaoalves31">
     <img src="https://avatars.githubusercontent.com/u/100239569?s=48&v=4"
         width="60"
     />
-</a>
+
 <a href="https://github.com/waramaral">
     <img src="https://avatars.githubusercontent.com/u/166131433?v=4"
         width="60"
     />
-</a> -
+
 <a href="https://github.com/pedrosamuelfeijao">
     <img src="https://avatars.githubusercontent.com/u/89226522?v=4"
         width="60"
     />
-</a> -
+
 
 ***
 
