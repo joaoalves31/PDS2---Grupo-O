@@ -7,6 +7,33 @@
 O projeto presente neste repositório e nomeado pelos seus colaboradores como "Sitema de transferências" tem como seu principal objetivo replicar o funcionamento de um sistema de banco. As funções que serão  implementadas são as seguintes:
 
 
+## 📖 Contribuição
+
+Agradecemos aos integrantes do grupo: 
+
+<a href="https://github.com/andreassisrg">
+    <img src="https://avatars.githubusercontent.com/u/79288199?v=4"
+        width="60"
+    />
+</a> -
+<a href="https://github.com/joaoalves31">
+    <img src="https://avatars.githubusercontent.com/u/100239569?s=48&v=4"
+        width="60"
+    />
+</a>
+<a href="https://github.com/waramaral">
+    <img src="https://avatars.githubusercontent.com/u/166131433?v=4"
+        width="60"
+    />
+</a> -
+<a href="https://github.com/pedrosamuelfeijao">
+    <img src="https://avatars.githubusercontent.com/u/89226522?v=4"
+        width="60"
+    />
+</a> -
+
+***
+
 ### Pré-requisitos
 Para começar a utilizar o repositório, você precisa cumprir todos os requisitos abaixo:
 
