@@ -1,4 +1,4 @@
-#include "usuario.hpp"
+#include "../include/usuario.hpp"
 #include <iostream>
 
 Usuario::Usuario() : idUsuario(0) {} // Inicializa o ID do usuário como 0

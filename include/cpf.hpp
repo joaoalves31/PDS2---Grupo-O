@@ -1,5 +1,4 @@
-#ifndef CPF_HPP
-#define CPF_HPP
+#pragma once
 
 #include <string>
 
@@ -13,5 +12,3 @@ public:
     Cpf(const std::string &n);
     std::string get_numero();
 };
-
-#endif
