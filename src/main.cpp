@@ -2,12 +2,17 @@
 #include "../include/sqlite/sqlite3.h"
 #include "../include/usuario.hpp"
 
+void clear_screen() {
+    std::cout << "\033[2J\033[H"; // Função que limpa o console;
+}
+
+
 int main()
 {
 	/*
 		Bem Vindo ao Banquin!
 
-		Implemenetação de dois menus, um para gerar autenticação do usuário e outro para
+		Implementação de dois menus, um para gerar autenticação do usuário e outro para
 		prover as opções dadas ao usuário. Utilização de uma variável para armazenar a
 		intenção do usuário.
 	*/
@@ -17,6 +22,8 @@ int main()
 	// Primeiro Menu - Acesso ao Usuário
 	while(true)
 	{
+		clear_screen();
+
 		std::cout << "Bem Vindo ao Banquin!" << '\n';
 		std::cout << "Primeiro, registre-se ou entre em nosso sistema." << '\n';
 		std::cout << "[1] Entrar na Minha conta" << '\n';
@@ -56,6 +63,8 @@ int main()
 
 		if (opcao == 7)
 		{
+			clear_screen();
+
 			std::cout << "Tchau <usuario>!!!" << std::endl;
 			exit(0);
 		}
