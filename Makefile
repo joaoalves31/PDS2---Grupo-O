@@ -26,7 +26,7 @@ clean:
 
 # Alvo "run" para executar o programa compilado
 run: $(EXEC)
-	@./$(EXEC)
+	@./$<
 
 # Alvo padrão
 all: $(EXEC)
