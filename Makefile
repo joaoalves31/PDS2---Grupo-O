@@ -1,3 +1,4 @@
+# Variáveis
 CC := g++
 SRCDIR := src
 TSTDIR := tests
@@ -16,26 +17,31 @@ TSTSOURCES := $(shell find $(TSTDIR) -type f -name *.$(SRCEXT))
 CFLAGS := -g --coverage -w -Wall -O3 -std=c++17
 INC := -I include/ -I third_party/
 
+# Regras
+
+# Compilar arquivos .cpp em .o
 $(OBJDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
 	@mkdir -p $(@D)
 	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
 
+# Compilar o executável principal
 main: $(OBJECTS)
-	@mkdir -p $(BINDIR)
 	$(CC) $(CFLAGS) $(INC) $(MAIN) $^ -o $(BINDIR)/main
 
-tests: $(OBJECTS)
-	@mkdir -p $(BINDIR)
-	$(CC) $(CFLAGS) $(INC) $(TESTER) $(TSTSOURCES) $^ -o $(BINDIR)/tester
+# Compilar o executável de testes
+tests: $(OBJECTS) $(TSTSOURCES:.cpp=.o)
+	$(CC) $(CFLAGS) $(INC) $(TESTER) $^ -o $(BINDIR)/tester
 	$(BINDIR)/tester
 
+# Alvo padrão
 all: main
 
+# Limpar arquivos objeto e executáveis
 clean:
-	$(RM) -r $(OBJDIR)/* $(BINDIR)/* coverage/* *.gcda *.gcno
+	rm -rf $(OBJDIR)/* $(BINDIR)/* coverage/* *.gcda *.gcno
 
+# Limpar diretórios de build e bin
 distcheck:
-	$(RM) -r $(OBJDIR)/*
-	$(RM) -r $(BINDIR)/*
+	rm -rf $(OBJDIR)/* $(BINDIR)/*
 
-.PHONY: clean
+.PHONY: clean distcheck all main tests
