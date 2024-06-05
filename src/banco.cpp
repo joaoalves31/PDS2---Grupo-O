@@ -153,3 +153,40 @@ void Banco::adicionaConta(Conta &conta)
     Contas[nomeDoUsuario] = &conta;
     Users.push_back(nomeDoUsuario);
 }
+
+Conta *Banco::login()
+{
+    bool logado = false;
+    std::string user;
+    std::string key;
+    do
+    {
+        std::cout << "\n====================================================================\n\n";
+        std::cout << "Insira seu nome de usuário: ➡  ";
+        std::cin >> user;
+        if (existe(user, Users))
+        { // verifica se o nome de usuario digitado existe no vetor banco de usuarios;
+            std::cout << "Insira sua senha de 4 dígitos: ➡  ";
+            std::cin >> key;
+            if (key == Contas[user]->get_titular()->get_senha())
+            { //  verifica se a senha informada confere com a senha da conta referente ao nome de usuario
+                system("clear");
+                std::cout << "====================================================================\n\n";
+                std::cout << "Login bem sucedido! Seja bem-vindo, " << Contas[user]->get_titular()->get_nome() << "." << std::endl;
+                std::cout << "\n====================================================================\n\n";
+                logado = true;
+            }
+            else
+            {
+                std::cout << "Senha incorreta. Tente novamente! ";
+                logado = false;
+            }
+        }
+        else
+        {
+            std::cout << "Este usuário não existe! Tente novamente!" << std::endl;
+        }
+    } while (!logado);
+
+    return Contas[user];
+}
