@@ -135,3 +135,14 @@ void Banco::realizaOperacao(int opcao, Conta *conta)
         std::cout << "====================================================================\n";
     }
 }
+
+
+int Banco::selecionaOperacao()
+{
+    int opcao;
+    std::cout << "Digite a opção referente a sua operação: " << std::endl;
+    std::cout << "[1] - Saque\n[2] - Depósito\n[3] - Transferência\n[4] - Saldo\n[5] - Fazer login\n[6] - Extrato\n[7] - Finalizar operação\n" << std::endl;
+    std::cout << "====================================================================\n";
+    std::cin >> opcao;
+    return opcao;
+}
