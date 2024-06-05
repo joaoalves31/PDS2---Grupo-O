@@ -190,3 +190,15 @@ Conta *Banco::login()
 
     return Contas[user];
 }
+
+ void Banco::imprimeExtrato(){
+    for(int i=0;i<transacoes.size();i++){
+        if(transacoes[i].get_tipo() != "Transferencia"){
+        std::cout << "Tipo de transacao: " << transacoes[i].get_tipo() << " -> Valor: " << transacoes[i].get_valor() << " -> Autor: " << transacoes[i].get_autor() << std::endl;
+        std::cout << std::endl;
+        }else{
+            std::cout << "Tipo de transacao: " << transacoes[i].get_tipo() << " -> Valor: " << transacoes[i].get_valor() << " -> Autor: " << transacoes[i].get_autor() << " -> Destino: " << transacoes[i].get_destino() << std::endl;
+            std::cout << std::endl;
+        }
+    }
+}
