@@ -1,32 +1,41 @@
-# Variáveis
-CC = g++
-CFLAGS = -Wall -std=c++11 -fPIE # Configurações para C++
-SQL = gcc -lpthread -ldl -lm -fPIE  # Configurações para API SQLite3
-INCLUDE = include
-BUILD = build
-SRC = $(wildcard src/*.cpp) $(wildcard $(INCLUDE)/*.cpp) # Alterado para procurar arquivos-fonte em src e include
-OBJ = $(SRC:.cpp=.o)
-EXEC = programa
+CC := g++
+SRCDIR := src
+TSTDIR := tests
+OBJDIR := build
+BINDIR := bin
 
-# Compilação da API SQLite3 deve ser feita pelo GCC por ser um arquivo .c
-$(BUILD)/sqlite.o: $(INCLUDE)/sqlite/sqlite3.c
-	$(SQL) -c $< -o $@
+TARGET := main
+MAIN := program/main.cpp
+TESTER := program/tester.cpp
 
-# Compilação de todos os módulos para arquivos .o
-$(BUILD)/%.o: %.cpp
-	$(CC) $(CFLAGS) -c $< -o $@
+SRCEXT := cpp
+SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
+OBJECTS := $(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
+TSTSOURCES := $(shell find $(TSTDIR) -type f -name *.$(SRCEXT))
 
-# Linkagem de todos arquivos .o em um único executável
-$(EXEC): $(OBJ)
-	$(CC) $(CFLAGS) -o $@ $^
+CFLAGS := -g --coverage -w -Wall -O3 -std=c++17
+INC := -I include/ -I third_party/
 
-# Alvo "clean" para limpar o arquivo executável e os arquivos objeto
+$(OBJDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
+	@mkdir -p $(@D)
+	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
+
+main: $(OBJECTS)
+	@mkdir -p $(BINDIR)
+	$(CC) $(CFLAGS) $(INC) $(MAIN) $^ -o $(BINDIR)/main
+
+tests: $(OBJECTS)
+	@mkdir -p $(BINDIR)
+	$(CC) $(CFLAGS) $(INC) $(TESTER) $(TSTSOURCES) $^ -o $(BINDIR)/tester
+	$(BINDIR)/tester
+
+all: main
+
 clean:
-	rm -f $(EXEC) $(OBJ)
+	$(RM) -r $(OBJDIR)/* $(BINDIR)/* coverage/* *.gcda *.gcno
 
-# Alvo "run" para executar o programa compilado
-run: $(EXEC)
-	@./$<
+distcheck:
+	$(RM) -r $(OBJDIR)/*
+	$(RM) -r $(BINDIR)/*
 
-# Alvo padrão
-all: $(EXEC)
+.PHONY: clean
