@@ -146,3 +146,10 @@ int Banco::selecionaOperacao()
     std::cin >> opcao;
     return opcao;
 }
+
+void Banco::adicionaConta(Conta &conta)
+{
+    std::string nomeDoUsuario = conta.get_titular()->get_usuario();
+    Contas[nomeDoUsuario] = &conta;
+    Users.push_back(nomeDoUsuario);
+}
