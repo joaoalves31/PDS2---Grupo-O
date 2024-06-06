@@ -1,7 +1,24 @@
-#include "../include/pessoa.hpp"
+#include "pessoa.hpp"
 
-//Classe criadora das pessoas 
 
-/* Aqui criamos as pessoas com seus respectivos dados, 
- os quais serão utiliziados com um dos dois tipos diferentes de
- conta. */
+Pessoa::Pessoa(std::string n, int i, std::string c) : nome(n), idade(i), cpf(c)
+{
+}
+
+
+std::string Pessoa::get_nome()
+{
+    return nome;
+}
+
+
+int Pessoa::get_idade()
+{
+    return idade;
+}
+
+
+std::string Pessoa::get_cpf()
+{
+    return cpf.get_numero();
+}
