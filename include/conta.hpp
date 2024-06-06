@@ -1,1 +1,2 @@
-#pragma once
+#ifndef __CONTABANCARIA_HPP__
+#define __CONTABANCARIA_HPP__
