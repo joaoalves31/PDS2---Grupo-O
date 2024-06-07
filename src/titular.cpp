@@ -1,4 +1,4 @@
-#include "titular.hpp"
+#include "../include/titular.hpp"
 
 
 Titular::Titular(std::string n, int i, std::string c, std::string u, std::string s) : Pessoa(n, i, c)

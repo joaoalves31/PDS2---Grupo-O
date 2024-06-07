@@ -1,4 +1,4 @@
-#include "pessoa.hpp"
+#include "../include/pessoa.hpp"
 
 
 Pessoa::Pessoa(std::string n, int i, std::string c) : nome(n), idade(i), cpf(c)
