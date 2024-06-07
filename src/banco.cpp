@@ -21,7 +21,7 @@ bool existe(std::string palavra, std::vector<std::string> vetor)
 Banco::Banco()
 {
     system("clear");
-    std::cout << "\n\n    ============ Seja bem-vindo ao NossoBanco! ================" << std::endl;
+    std::cout << "\n\n    ============ Seja bem-vindo ao Banquim! ================" << std::endl;
     std::cout << "====================================================================\n";
     saldo = 10000;
 }

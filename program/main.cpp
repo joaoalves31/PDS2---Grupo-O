@@ -23,15 +23,11 @@ int main()
         Banco banco;
 
 
-        Titular t3("Lucas", 20, "11125298618", "lchinu", "2424");
+        Titular t1("PedroFeijao", 20, "11125298618", "feijao", "0987");
         ContaPoupanca p2(t3);
         banco.adicionaConta(p2);
-
-        Titular t4("Camila", 22, "02374573699", "laranjeira", "1234");
-        ContaPoupanca p4(t4);
-        banco.adicionaConta(p4);
         
-        Titular t5("Joao", 20, "12345678900", "joao", "123");
+        Titular t2("Joao", 20, "12345678900", "joao", "123");
         ContaPoupanca p5(t5);
         banco.adicionaConta(p5);
         
