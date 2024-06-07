@@ -1,34 +1,29 @@
-#ifndef __CONTABANCARIA_HPP__
-#define __CONTABANCARIA_HPP__
+#ifndef CONTA_HPP
+#define CONTA_HPP
 
 #include <iostream>
-#include <string>
-#include <vector>
 #include <map>
 #include "titular.hpp"
 
-class Conta
-{
-protected:
-
-    virtual float taxaSaque();
+class Conta {
+private:
+    Titular titular;
+    float saldo;
 
 public:
-
     Conta(Titular t);
+    ~Conta();
 
-    virtual void realizaSaque(float valorSaque);
+    void realizaSaque(float valorSaque);
     void realizaDeposito(float valorDeposito);
     float get_saldo();
     void imprimeSaldo();
- 
     void transfere(std::string userDestino, float valor, std::map<std::string, Conta *> contas);
-    ~Conta();
-   
     Titular *get_titular();
-   
     void enviaValor(float valor);
     void recebeValor(float valor);
+
+    virtual float taxaSaque();
 };
 
-#endif
+#endif // CONTA_HPP
