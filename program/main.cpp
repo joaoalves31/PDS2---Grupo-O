@@ -24,14 +24,16 @@ int main()
 
 
         Titular t1("PedroFeijao", 20, "11125298618", "feijao", "0987");
-        ContaPoupanca p2(t3);
+        ContaPoupanca p2(t1);
         banco.adicionaConta(p2);
         
         Titular t2("Joao", 20, "12345678900", "joao", "123");
-        ContaPoupanca p5(t5);
+        ContaPoupanca p5(t2);
         banco.adicionaConta(p5);
         
-        
+        Titular t3("Andre", 23, "69426942690", "andre", "0000");
+        ContaPoupanca p3(t3);
+        banco.adicionaConta(p3);
 
         Conta *contaLogada = banco.login();
 
