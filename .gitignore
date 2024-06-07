@@ -1,3 +1,14 @@
-build/*.o
-programa
-/.vscode
+# Ignore arquivos de cobertura de teste
+*.gcda
+*.gcno
+
+# Ignore diretórios de build e bin
+build/
+bin/
+
+# Ignore arquivos de dependência gerados
+*.d
+
+# Ignore outros arquivos temporários
+*.log
+*.tmp
