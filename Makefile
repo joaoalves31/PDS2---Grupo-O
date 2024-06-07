@@ -26,11 +26,17 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
 
 # Compilar o executável principal
 main: $(OBJECTS)
+	@mkdir -p $(BINDIR)
 	$(CC) $(CFLAGS) $(INC) $(MAIN) $^ -o $(BINDIR)/main
+
+# Executar o programa principal
+run: main
+	$(BINDIR)/main
 
 # Compilar o executável de testes
 tests: $(OBJECTS) $(TSTSOURCES:.cpp=.o)
-	$(CC) $(CFLAGS) $(INC) $(TESTER) $^ -o $(BINDIR)/tester
+	@mkdir -p $(BINDIR)
+	$(CC) $(CFLAGS) $(INC) $(TSTSOURCES) $^ -o $(BINDIR)/tester
 	$(BINDIR)/tester
 
 # Alvo padrão
@@ -42,6 +48,6 @@ clean:
 
 # Limpar diretórios de build e bin
 distcheck:
-	rm -rf $(OBJDIR)/* $(BINDIR)/*
+	rm -rf $(OBJDIR) $(BINDIR)
 
-.PHONY: clean distcheck all main tests
+.PHONY: clean distcheck all main tests run
