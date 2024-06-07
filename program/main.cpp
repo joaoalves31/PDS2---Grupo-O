@@ -21,6 +21,31 @@ int main()
     try
     {
         Banco banco;
+
+        Titular t1("Matheus", 23, "13535745632", "mathewsq", "2607");
+        ContaUniversitaria c1(t1);
+        banco.adicionaConta(c1);
+
+        Titular t2("Riquelme Batista", 22, "12782581678", "Riquelme3m", "1111");
+        ContaPoupanca p1(t2);
+        banco.adicionaConta(p1);
+
+        Titular t3("Lucas", 20, "11125298618", "lchinu", "2424");
+        ContaPoupanca p2(t3);
+        banco.adicionaConta(p2);
+
+        Titular t4("Camila", 22, "02374573699", "laranjeira", "1234");
+        ContaPoupanca p4(t4);
+        banco.adicionaConta(p4);
+        
+        Titular t5("Joao", 20, "12345678900", "joao", "123");
+        ContaPoupanca p5(t5);
+        banco.adicionaConta(p5);
+        
+        Titular t6("Juan", 21, "11150830662", "ojuanlp", "0910");
+        ContaPoupanca p6(t6);
+        banco.adicionaConta(p6);
+        
         
 
         Conta *contaLogada = banco.login();
