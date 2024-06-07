@@ -1,6 +1,11 @@
 #include "../include/titular.hpp"
 
 
+std::string Titular::get_nome()
+{
+        return nome;
+}
+
 Titular::Titular(std::string n, int i, std::string c, std::string u, std::string s) : Pessoa(n, i, c)
 {
         usuario = u;
@@ -17,7 +22,6 @@ std::string Titular::get_senha()
 {
         return senha;
 }
-
 
 std::string Titular::get_usuario()
 {

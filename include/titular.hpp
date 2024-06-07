@@ -15,9 +15,10 @@ public:
 
     Titular(std::string n, int i, std::string c, std::string u, std::string s);
     Titular(std::string n, int i, std::string c);
- 
+
     std::string get_senha();
     std::string get_usuario();
+    std::string get_nome();
 };
 
 #endif
