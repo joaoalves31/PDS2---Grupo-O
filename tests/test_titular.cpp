@@ -34,3 +34,10 @@ TEST_CASE("Testa o método get_senha()")
 		Titular t("Joao", 20, "12345678900", "joao", "123");
 		CHECK(t.get_senha() == "123");
 }
+
+//testa o método get_nome()
+TEST_CASE("Teste o método get_nome()")
+{
+		Titular t("João", 20, "12345678900", "joao", "123");
+		CHECK(t.get_nome() = "Joao");
+}
